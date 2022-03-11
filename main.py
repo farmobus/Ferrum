@@ -17,7 +17,7 @@ def processing():
     data = json.loads(request.data)
     if 'type' in data.keys():
         type = data['type']
-        if type == 'confirmation' and "group_id" == 200615913:
+        if type == 'confirmation' and data['group_id"'] == 200615913:
             return '995899ba'
         elif type == 'message_new':
             session = vk.Session()
